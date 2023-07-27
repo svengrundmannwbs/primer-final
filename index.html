@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Primer Final Blog</title>
+    <link rel="icon" href="img/favicon-16x16.png" type="image/png" />
+    <link rel="icon" href="img/favicon-32x32.png" type="image/png" />
+    <link rel="icon" href="img/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -12,15 +17,15 @@
       <div class="wave"></div>
       <div class="wave"></div>
       <div class="branding">
-        <img class="logo" src="./img/logo.png" alt="Blog logo" />
-        <span class="blogtitle">
+        <img class="logo shadow" src="./img/logo.png" alt="Blog logo" />
+        <span class="blogtitle shadow">
           my learning pad<br /><span
             >WBS codingschool: primer final project</span
           >
         </span>
       </div>
       <nav>
-        <ul>
+        <ul class="shadow">
           <li>
             <a href="#article1">Semantisches HTML</a>
           </li>
@@ -39,7 +44,7 @@
     <main>
       <div class="blogcontent">
         <section class="posts">
-          <article id="article1">
+          <article id="article1" class="shadow">
             <h2 class="heading">Semantisches HTML</h2>
             <a href="#top">top</a>
             <span
@@ -82,7 +87,7 @@
             </p>
             <br /><br />
           </article>
-          <article id="article2">
+          <article id="article2" class="shadow">
             <h2 class="heading">HTML Character Entities</h2>
             <a href="#top">top</a>
             <span
@@ -115,7 +120,7 @@
               >
             </p>
           </article>
-          <article id="article3">
+          <article id="article3" class="shadow">
             <h2 class="heading">CSS Games</h2>
             <a href="#top">top</a>
             <span
@@ -171,7 +176,7 @@
               >
             </p>
           </article>
-          <article id="article4">
+          <article id="article4" class="shadow">
             <h2 class="heading">what?!</h2>
             <a href="#top">top</a>
             <span>
@@ -186,14 +191,26 @@
           </article>
         </section>
         <aside>
-          <nav>
+          <nav class="shadow">
             <h2>Useful links</h2>
             <ul>
-              <li>March 2023</li>
-              <li>April 2023</li>
-              <li>May 2023</li>
-              <li>June 2023</li>
-              <li>WBS CodingSchool</li>
+              <li>
+                <a href="https://htmlreference.io/">htmlreference.io</a>
+              </li>
+              <li>
+                <a href="https://cssreference.io/">cssreference.io</a>
+              </li>
+              <li>
+                <a href="https://developer.mozilla.org/en-US/docs/Web"
+                  >mozilla MDN</a
+                >
+              </li>
+              <li><a href="https://www.codewars.com/">CodeWars</a></li>
+              <li><a href="https://exercism.org/">Exercism.org</a></li>
+
+              <li>
+                <a href="https://www.wbscodingschool.com/">WBS CodingSchool</a>
+              </li>
             </ul>
           </nav>
         </aside>

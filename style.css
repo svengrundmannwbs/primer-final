@@ -35,14 +35,18 @@ img {
   height: auto;
 }
 
-/* my css */
+/* CSS juice */
+.shadow {
+  filter: drop-shadow(2px 4px 3px rgb(69, 69, 69));
+}
+
+/* START my css */
 body {
   width: 100%;
-  background: rgb(131, 124, 124);
   background: linear-gradient(
-    90deg,
-    rgba(131, 124, 124, 1) 0%,
-    rgba(173, 207, 189, 1) 100%
+    270deg,
+    rgba(224, 221, 115, 1) 0%,
+    rgba(127, 128, 127, 1) 100%
   );
   background-attachment: fixed;
   background-size: cover;
@@ -80,7 +84,6 @@ body {
 
 header {
   width: 100%;
-  background: rgb(224, 221, 115);
   background: linear-gradient(
     90deg,
     rgba(224, 221, 115, 1) 0%,
