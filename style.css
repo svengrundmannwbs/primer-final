@@ -126,7 +126,7 @@ header > nav > ul > li > a:hover {
 
 /* blogcontent */
 .blogcontent {
-  width: 100vw;
+  width: 95vw;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
