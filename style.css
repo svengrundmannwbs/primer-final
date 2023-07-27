@@ -146,6 +146,7 @@ article {
   padding: 20px;
   border-radius: 20px;
   border: 2px double black;
+  word-wrap: break-word;
 }
 
 article > h2.heading {
