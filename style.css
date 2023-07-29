@@ -37,7 +37,8 @@ img {
 
 /* CSS juice */
 .shadow {
-  filter: drop-shadow(2px 4px 3px rgb(69, 69, 69));
+  /* filter: drop-shadow(2px 4px 3px rgb(69, 69, 69)); */
+  box-shadow: 2px 4px 10px 1px rgba(0, 0, 0);
 }
 
 /* START my css */
@@ -106,10 +107,13 @@ header > nav {
 
 header > nav > ul {
   list-style: none;
+  display: flex;
+  flex-direction: row;
 }
 
 header > nav > ul > li {
-  display: inline;
+  display: block;
+  text-align: center;
 }
 
 /* nav links */
@@ -121,6 +125,8 @@ header > nav > ul > li > a {
   margin-right: 10px;
   padding: 10px 20px;
   white-space: nowrap;
+  display: block;
+  min-width: 150px;
 }
 
 header > nav > ul > li > a:hover {
@@ -213,6 +219,14 @@ aside > nav {
   border-radius: 20px;
   border: 2px double black;
 }
+a {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
+a:hover {
+  color: #818181;
+}
 
 aside > nav > ul {
   margin-top: 20px;
@@ -228,8 +242,16 @@ footer {
 
 /* mediaqueries */
 @media only screen and (max-width: 719px) {
+  header > nav > ul {
+    flex-direction: column;
+  }
+
+  .posts {
+    width: 100%;
+  }
+
   header > nav > ul > li {
-    display: block;
+    flex-direction: column;
     padding: 10px;
     border-radius: 65px;
     margin: 2px;
