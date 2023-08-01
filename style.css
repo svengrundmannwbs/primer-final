@@ -206,6 +206,11 @@ code {
   word-spacing: -6px;
 }
 
+.details {
+  border: 1px solid black;
+  padding: 10px;
+}
+
 /* aside */
 
 aside {
@@ -242,7 +247,7 @@ footer {
 }
 
 /* mediaqueries */
-@media only screen and (max-width: 719px) {
+@media only screen and (max-width: 880px) {
   header > nav > ul {
     flex-direction: column;
   }

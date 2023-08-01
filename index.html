@@ -1,257 +1,267 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Primer Final Blog</title>
-    <link rel="icon" href="img/favicon-16x16.png" type="image/png" />
-    <link rel="icon" href="img/favicon-32x32.png" type="image/png" />
-    <link rel="icon" href="img/favicon.ico" sizes="any" />
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="wave"></div>
-      <div class="wave"></div>
-      <div class="wave"></div>
-      <div class="branding">
-        <img class="logo shadow" src="./img/logo.png" alt="Blog logo" />
-        <span class="blogtitle">
-          my learning pad<br /><span class="shadow"
-            >WBS codingschool: primer final project</span
-          >
-        </span>
-      </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="#article1" class="shadow">Semantisches HTML</a>
-          </li>
-          <li>
-            <a href="#article2" class="shadow">Escape HTML tags</a>
-          </li>
-          <li>
-            <a href="#article3" class="shadow">CSS Games</a>
-          </li>
-          <li>
-            <a href="#article4" class="shadow">Markdown</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="blogcontent">
-        <section class="posts">
-          <article id="article1" class="shadow">
-            <h2 class="heading">Semantisches HTML</h2>
-            <a href="#top">top</a>
-            <span
-              ><time datetime="2023-07-27T11:43"
-                >posted by SG 27.07.2023 11:43 Uhr</time
-              ></span
-            >
-            <p>
-              Ich bin bei der Recherche zu semantischem HTML auf die Seite
-              <a
-                href="https://kulturbanause.de/blog/html-elemente-und-semantik/"
-                >https://kulturbanause.de/blog/html-elemente-und-semantik/</a
-              >
-              gestossen. Hier ein paar Auszüge:
-            </p>
-            <h2>Semantik sieht man nicht</h2>
-            <p>
-              Bei der semantischen Auszeichnung mittels HTML stellt sich nicht
-              die Frage nach dem Aussehen sondern ausschließlich nach der
-              Bedeutung der einzelnen Inhalte. Es ist also ganz schlechter Stil,
-              wenn man beispielsweise eine Überschrift der Gattung 3 &lt;h3&gt;
-              verwendet, nur weil man möchte, dass die Überschrift eine
-              bestimmte Farbe oder Größe bekommt. Eine technisch gut entwickelte
-              Website trennt Gestaltung und Semantik vollständig (siehe
-              standardkonformes Webdesign).
-            </p>
-            <h2>Warum Semantik in HTML wichtig ist</h2>
-            <p>
-              Nun könnte man denken, dass der korrekte Einsatz von
-              HTML-Elementen gemäß ihrer Bedeutung überflüssig ist, da die
-              Bedeutungsebene von den Besuchern der Website nicht gesehen wird.
-              Wichtig ist die semantische Auszeichnung unter anderem, da
-              Suchmaschinen den Quellcode lesen und anhand der verwendeten
-              HTML-Elemente die Wichtigkeit von Inhalten ableiten. Das hat
-              starke Auswirkungen auf das Ranking einer Website. Daher empfiehlt
-              es sich zum Beispiel, relevante Suchbegriffe (Keywords) in
-              semantisch gewichtigeren HTML-Elementen wie dem Seitentitel
-              (&lt;title&gt;) oder der Überschrift 1 (&lt;h1&gt;)
-              unterzubringen.
-            </p>
-            <br /><br />
-          </article>
-          <article id="article2" class="shadow">
-            <h2 class="heading">HTML Character Entities</h2>
-            <a href="#top">top</a>
-            <span
-              ><time datetime="2023-07-27T12:03"
-                >posted by SG 27.07.2023 12:03 Uhr</time
-              ></span
-            >
-            <h2>Wie kann man HTML-Tags auf einer Webseite anzeigen lassen?</h2>
-            <p>
-              Um HTML-Tags ohne Interpretation des Code-Editors und des Browsers
-              auf einer Webseite anzeigen zu lassen muss man sogenannte HTML
-              Character Entities benutzen. Dies verhindert das Zeichenfolgen,
-              die sich im Umfang der HTML-Tags befinden, nicht interpretiert
-              werden, sondern einfach nur angzeigt werden.
-            </p>
-            <h2>Beispiel am HTML-Tag body</h2>
-            <p>
-              Wenn man das body-Tag aus HTML in einer Webseite ausschreiben
-              will, benötigt man die HTML Character Entities für "kleiner" und
-              "größer": <br /><br />
-              <code>& l t ;</code> ist &lt;<br />
-              <code>& g t ;</code> ist &gt;<br /><br />
-              Wenn man nun die folgende Zeichenfolge im HTML-Quellcode nutzt,
-              erscheint das HTML-Tag body auf der Webseite: <br /><br />
-              <code>& l t ;body& g t ;</code> verwandelt sich in &lt;body&gt;
-              und wird nicht vom Browser interpretiert. <br /><br />
-              Weitere Entities findet man unter
-              <a href="https://developer.mozilla.org/en-US/docs/Glossary/Entity"
-                >https://developer.mozilla.org/en-US/docs/Glossary/Entity</a
-              >
-            </p>
-          </article>
-          <article id="article3" class="shadow">
-            <h2 class="heading">CSS Games</h2>
-            <a href="#top">top</a>
-            <span
-              ><time datetime="2023-07-27T12:28"
-                >posted by SG 27.07.2023 12:28 Uhr</time
-              ></span
-            >
-            <p>
-              Wir haben zu den Themen CSS ein paar Seiten empfohlen bekommen auf
-              denen man sich spielerisch mit dem Thema CSS, insbesondere den
-              Themen "CSS Selektoren", "CSS Grid" und "CSS flexBox" beschäftigen
-              kann.
-            </p>
-            <h2>CSS Diner</h2>
-            <p>
-              Hier kann man sich durch 32 Level arbeiten um ein Verständnis für
-              die verschiedenen Arten der CSS-Selektoren zu erhalten. Es wird
-              immer eine Ansprache von bestimmten Elementen verlangt die man
-              anhand von besimmten Selektoren und deren Verknüpfung erstellen
-              kann. <br /><br />
-              Link:
-              <a href="https://flukeout.github.io/"
-                >https://flukeout.github.io/</a
-              >
-            </p>
-            <h2>Grid Garden</h2>
-            <p>
-              Im Laufe dieses Spiels, welches aus 28 Level besteht, wird man
-              Schritt für Schritt an die Möglichkeiten des "CSS Grids"
-              herangeführt. Es werden einem Aufgaben gestellt die eine besimmte
-              Anordnung von Elementen im Grid verlangt. <br /><br />
-              <a href="https://cssgridgarden.com/#de"
-                >https://cssgridgarden.com/#de</a
-              >
-            </p>
-            <h2>Flexbox Froggy</h2>
-            <p>
-              In diesem Spiel muss man mit CSS-Eigenschaften aus dem Bereich
-              "CSS flexBox" Frösche auf den richtigen Platz positionieren. Je
-              nach Level muss man immer mehr Befehle nutzen um zur Lösung zu
-              gelangen. <br /><br />
-              <a href="https://flexboxfroggy.com/#de"
-                >https://flexboxfroggy.com/#de</a
-              >
-            </p>
-            <h2>Flexbox Defense</h2>
-            <p>
-              Dieses Spiel, aus dem Genre "Tower Defense", beschäftigt sich
-              ebenfalls mit CSS "flexbox". Hier ist die Aufgabe die Platzierung
-              der Verteidigungsanlagen um die Wellen an Zielen zu zerstören.<br /><br />
-              <a href="http://www.flexboxdefense.com/"
-                >http://www.flexboxdefense.com/ (kein SSL!)</a
-              >
-            </p>
-          </article>
-          <article id="article4" class="shadow">
-            <h2 class="heading">Markdown md</h2>
-            <a href="#top">top</a>
-            <span>
-              <time datetime="2023-07-28T11:35"
-                >posted by SG 28.07.2023 11:35 Uhr</time
-              ></span
-            >
-            <p>
-              Wenn einem HTML, CSS und Javascript lernen noch nicht genug ist,
-              der kann in das Rabbithole "Markdown" abtauchen. Diese
-              Auszeichnugssprache wird für Texte auf GitHub benutzt. Ein Guide
-              dazu gibt es unter
-              <a href="https://www.markdownguide.org/">Markdown guide</a>
-            </p>
-            <p>
-              Innerhalb von Markdown gibt es auch noch Erweiterungen durch die
-              man schnell ein sehr gutes ReadMe für seine Projekte erstellen
-              kann. Die "git-Hilfe" aus der Hackathon1-Gruppe wurde zum Beispiel
-              damit erstellt und formatiert, zu finden unter
-              <a
-                href="https://github.com/svengrundmannwbs/git-adventure/blob/main/git-help.md"
-                >GitHub git-adventure</a
-              >
-            </p>
-            <p>
-              Nachdem wir aber Zugang zu "codecademy.com" erhalten haben und es
-              dort praktische Übungen zu git gibt, glaube ich, wird die
-              Hilfe-Datei nicht mehr nötig sein.
-            </p>
-          </article>
-        </section>
-        <aside>
-          <nav class="shadow">
-            <h2>Useful links</h2>
-            <ul>
-              <li>
-                <a href="https://htmlreference.io/" target="_blank"
-                  >&gt; htmlreference.io</a
-                >
-              </li>
-              <li>
-                <a href="https://cssreference.io/" target="_blank"
-                  >&gt; cssreference.io</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://developer.mozilla.org/en-US/docs/Web"
-                  target="_blank"
-                  >&gt; mozilla MDN</a
-                >
-              </li>
-              <li>
-                <a href="https://www.codewars.com/" target="_blank"
-                  >&gt; CodeWars</a
-                >
-              </li>
-              <li>
-                <a href="https://exercism.org/" target="_blank"
-                  >&gt; Exercism.org</a
-                >
-              </li>
 
-              <li>
-                <a href="https://www.wbscodingschool.com/" target="_blank"
-                  >&gt; WBS CodingSchool</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </aside>
-      </div>
-    </main>
-    <footer>
-      <div class="copyright">&copy; 2023 Sven Grundmann</div>
-    </footer>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Primer Final Blog</title>
+  <link rel="icon" href="img/favicon-16x16.png" type="image/png" />
+  <link rel="icon" href="img/favicon-32x32.png" type="image/png" />
+  <link rel="icon" href="img/favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="branding">
+      <img class="logo shadow" src="./img/logo.png" alt="Blog logo" />
+      <span class="blogtitle">
+        my learning pad<br /><span class="shadow">WBS codingschool: primer final project</span>
+      </span>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="#article5" class="shadow">Cool HTML tags</a>
+        </li>
+        <li>
+          <a href="#article4" class="shadow">Markdown</a>
+        </li>
+        <li>
+          <a href="#article3" class="shadow">CSS Games</a>
+        </li>
+        <li>
+          <a href="#article2" class="shadow">Escape HTML tags</a>
+        </li>
+        <li>
+          <a href="#article1" class="shadow">Semantisches HTML</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="blogcontent">
+      <section class="posts">
+        <article id="article5" class="shadow">
+          <h2 class="heading">Cool HTML Tags</h2>
+          <a href="#top">top</a>
+          <span>
+            <time datetime="2023-08-01T11:00">posted by SG 01.08.2023 11:00 Uhr</time></span>
+          <p>
+            Heute habe ich im Rahmen vom Workshop "Wireframe Integration" von einem Artikel
+            (<a href="https://blog.duda.co/8-cool-html-tags-you-didn-t-know-existed">8 Cool HTML Tags You Didn't Know
+              Existed</a>) erfahren, daß es noch viele, für mich neue, HTML-Tags gibt. Seit HTML 4.0 hat sich wohl
+            einiges getan &#129315;
+          </p>
+          <p>
+            Zum Beispiel gibt es da das
+            <code><strong>abbr</strong></code> Tag. Damit kann man <abbr title="Abkürzung">Abk.</abbr> mit der
+            jeweiligen Bedeutung zu
+            verknüpfen. Man
+            schwebt einfach mit der Maus über dem <code><strong>abbr</strong></code> HTML-Tag und sieht die Bedeutung
+            die im attribute "title" eingegeben wurde.
+          </p>
+          <p>Aber was ich richtig gut finde ist das <code><strong>details</strong></code> und dazugehörig
+            <code><strong>details</strong></code> HTML-Tag
+          <div class="details">
+            <details>
+              <summary>Details</summary>
+              Something small enough to escape casual notice.
+            </details>
+            <details open>
+              <summary>Item 2</summary>
+              Something else. This one defaults to open!
+            </details>
+          </div>
+          </p>
+          <p>
+            Zwei andere HTML-Tags die ich interessant finde sind
+            <code><strong>meter</strong></code> und <code><strong>progress</strong></code>
+          <div class="details">
+            Meter: <meter min="0" max="100" low="25" high="90" optimum="75" value="20"></meter><br>
+            Progress: <progress id="project" max="100" value="70"> 70% </progress>
+          </div>
+          </p>
+          <p>Auf jeden Fall werde ich mir die weiteren Elemente wie <code><strong>datalist</strong></code>,
+            <code><strong>mark</strong></code>, <code><strong>audio</strong></code> und die anderen, im Artikel
+            erwähnten, noch anschauen
+          </p>
+        </article>
+        <article id="article4" class="shadow">
+          <h2 class="heading">Markdown md</h2>
+          <a href="#top">top</a>
+          <span>
+            <time datetime="2023-07-28T11:35">posted by SG 28.07.2023 11:35 Uhr</time></span>
+          <p>
+            Wenn einem HTML, CSS und Javascript lernen noch nicht genug ist,
+            der kann in das Rabbithole "Markdown" abtauchen. Diese
+            Auszeichnugssprache wird für Texte auf GitHub benutzt. Ein Guide
+            dazu gibt es unter
+            <a href="https://www.markdownguide.org/">Markdown guide</a>
+          </p>
+          <p>
+            Innerhalb von Markdown gibt es auch noch Erweiterungen durch die
+            man schnell ein sehr gutes ReadMe für seine Projekte erstellen
+            kann. Die "git-Hilfe" aus der Hackathon1-Gruppe wurde zum Beispiel
+            damit erstellt und formatiert, zu finden unter
+            <a href="https://github.com/svengrundmannwbs/git-adventure/blob/main/git-help.md">GitHub git-adventure</a>
+          </p>
+          <p>
+            Nachdem wir aber Zugang zu "codecademy.com" erhalten haben und es
+            dort praktische Übungen zu git gibt, glaube ich, wird die
+            Hilfe-Datei nicht mehr nötig sein.
+          </p>
+        </article>
+        <article id="article3" class="shadow">
+          <h2 class="heading">CSS Games</h2>
+          <a href="#top">top</a>
+          <span><time datetime="2023-07-27T12:28">posted by SG 27.07.2023 12:28 Uhr</time></span>
+          <p>
+            Wir haben zu den Themen CSS ein paar Seiten empfohlen bekommen auf
+            denen man sich spielerisch mit dem Thema CSS, insbesondere den
+            Themen "CSS Selektoren", "CSS Grid" und "CSS flexBox" beschäftigen
+            kann.
+          </p>
+          <h2>CSS Diner</h2>
+          <p>
+            Hier kann man sich durch 32 Level arbeiten um ein Verständnis für
+            die verschiedenen Arten der CSS-Selektoren zu erhalten. Es wird
+            immer eine Ansprache von bestimmten Elementen verlangt die man
+            anhand von besimmten Selektoren und deren Verknüpfung erstellen
+            kann. <br /><br />
+            Link:
+            <a href="https://flukeout.github.io/">https://flukeout.github.io/</a>
+          </p>
+          <h2>Grid Garden</h2>
+          <p>
+            Im Laufe dieses Spiels, welches aus 28 Level besteht, wird man
+            Schritt für Schritt an die Möglichkeiten des "CSS Grids"
+            herangeführt. Es werden einem Aufgaben gestellt die eine besimmte
+            Anordnung von Elementen im Grid verlangt. <br /><br />
+            <a href="https://cssgridgarden.com/#de">https://cssgridgarden.com/#de</a>
+          </p>
+          <h2>Flexbox Froggy</h2>
+          <p>
+            In diesem Spiel muss man mit CSS-Eigenschaften aus dem Bereich
+            "CSS flexBox" Frösche auf den richtigen Platz positionieren. Je
+            nach Level muss man immer mehr Befehle nutzen um zur Lösung zu
+            gelangen. <br /><br />
+            <a href="https://flexboxfroggy.com/#de">https://flexboxfroggy.com/#de</a>
+          </p>
+          <h2>Flexbox Defense</h2>
+          <p>
+            Dieses Spiel, aus dem Genre "Tower Defense", beschäftigt sich
+            ebenfalls mit CSS "flexbox". Hier ist die Aufgabe die Platzierung
+            der Verteidigungsanlagen um die Wellen an Zielen zu zerstören.<br /><br />
+            <a href="http://www.flexboxdefense.com/">http://www.flexboxdefense.com/ (kein SSL!)</a>
+          </p>
+        </article>
+        <article id="article2" class="shadow">
+          <h2 class="heading">HTML Character Entities</h2>
+          <a href="#top">top</a>
+          <span><time datetime="2023-07-27T12:03">posted by SG 27.07.2023 12:03 Uhr</time></span>
+          <h2>Wie kann man HTML-Tags auf einer Webseite anzeigen lassen?</h2>
+          <p>
+            Um HTML-Tags ohne Interpretation des Code-Editors und des Browsers
+            auf einer Webseite anzeigen zu lassen muss man sogenannte HTML
+            Character Entities benutzen. Dies verhindert das Zeichenfolgen,
+            die sich im Umfang der HTML-Tags befinden, nicht interpretiert
+            werden, sondern einfach nur angzeigt werden.
+          </p>
+          <h2>Beispiel am HTML-Tag body</h2>
+          <p>
+            Wenn man das body-Tag aus HTML in einer Webseite ausschreiben
+            will, benötigt man die HTML Character Entities für "kleiner" und
+            "größer": <br /><br />
+            <code>& l t ;</code> ist &lt;<br />
+            <code>& g t ;</code> ist &gt;<br /><br />
+            Wenn man nun die folgende Zeichenfolge im HTML-Quellcode nutzt,
+            erscheint das HTML-Tag body auf der Webseite: <br /><br />
+            <code>& l t ;body& g t ;</code> verwandelt sich in &lt;body&gt;
+            und wird nicht vom Browser interpretiert. <br /><br />
+            Weitere Entities findet man unter
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Glossary/Entity">https://developer.mozilla.org/en-US/docs/Glossary/Entity</a>
+          </p>
+        </article>
+        <article id="article1" class="shadow">
+          <h2 class="heading">Semantisches HTML</h2>
+          <a href="#top">top</a>
+          <span><time datetime="2023-07-27T11:43">posted by SG 27.07.2023 11:43 Uhr</time></span>
+          <p>
+            Ich bin bei der Recherche zu semantischem HTML auf die Seite
+            <a
+              href="https://kulturbanause.de/blog/html-elemente-und-semantik/">https://kulturbanause.de/blog/html-elemente-und-semantik/</a>
+            gestossen. Hier ein paar Auszüge:
+          </p>
+          <h2>Semantik sieht man nicht</h2>
+          <p>
+            Bei der semantischen Auszeichnung mittels HTML stellt sich nicht
+            die Frage nach dem Aussehen sondern ausschließlich nach der
+            Bedeutung der einzelnen Inhalte. Es ist also ganz schlechter Stil,
+            wenn man beispielsweise eine Überschrift der Gattung 3 &lt;h3&gt;
+            verwendet, nur weil man möchte, dass die Überschrift eine
+            bestimmte Farbe oder Größe bekommt. Eine technisch gut entwickelte
+            Website trennt Gestaltung und Semantik vollständig (siehe
+            standardkonformes Webdesign).
+          </p>
+          <h2>Warum Semantik in HTML wichtig ist</h2>
+          <p>
+            Nun könnte man denken, dass der korrekte Einsatz von
+            HTML-Elementen gemäß ihrer Bedeutung überflüssig ist, da die
+            Bedeutungsebene von den Besuchern der Website nicht gesehen wird.
+            Wichtig ist die semantische Auszeichnung unter anderem, da
+            Suchmaschinen den Quellcode lesen und anhand der verwendeten
+            HTML-Elemente die Wichtigkeit von Inhalten ableiten. Das hat
+            starke Auswirkungen auf das Ranking einer Website. Daher empfiehlt
+            es sich zum Beispiel, relevante Suchbegriffe (Keywords) in
+            semantisch gewichtigeren HTML-Elementen wie dem Seitentitel
+            (&lt;title&gt;) oder der Überschrift 1 (&lt;h1&gt;)
+            unterzubringen.
+          </p>
+          <br /><br />
+        </article>
+
+
+
+
+      </section>
+      <aside>
+        <nav class="shadow">
+          <h2>Useful links</h2>
+          <ul>
+            <li>
+              <a href="https://htmlreference.io/" target="_blank">&gt; htmlreference.io</a>
+            </li>
+            <li>
+              <a href="https://cssreference.io/" target="_blank">&gt; cssreference.io</a>
+            </li>
+            <li>
+              <a href="https://developer.mozilla.org/en-US/docs/Web" target="_blank">&gt; mozilla MDN</a>
+            </li>
+            <li>
+              <a href="https://www.codewars.com/" target="_blank">&gt; CodeWars</a>
+            </li>
+            <li>
+              <a href="https://exercism.org/" target="_blank">&gt; Exercism.org</a>
+            </li>
+
+            <li>
+              <a href="https://www.wbscodingschool.com/" target="_blank">&gt; WBS CodingSchool</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+  </main>
+  <footer>
+    <div class="copyright">&copy; 2023 Sven Grundmann</div>
+  </footer>
+</body>
+
 </html>
